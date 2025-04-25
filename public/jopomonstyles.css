@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: url("../public/images/Theme1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title, .subtitle {
+    color: white;
+    font-size: 32px;
+    font-family: karla , sans-serif;
+}
+
+#select-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 10px;
+}
+
+.jopomon-card {
+    width: 81;
+    height: 20;
+    background: #255F38;
+    padding: 18;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.jopomon-card img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#button-select {
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    background: #27391C;
+    border: 2px solid #1F7D53;
+    color: white;
+    font-family: "roboto" , sans-serif;
+    margin-top: 30px;
+
+}
+
+input:checked label {
+    background: #1F7D53;
+    color: white;
+}
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: #1F7D53;
+    color: white;
+}
+
+#select-attack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attack-button {
+    width: 28%;
+    height: 50px;
+    border-radius: 10px;
+    background: #27391C;
+    border: 2px solid #1F7D53;
+    color: white;
+    font-family: "roboto" , sans-serif;
+    margin-top: 30px;
+}
+
+#message, #result {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#button-reset {
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    background: #27391C;
+    border: 2px solid #1F7D53;
+    color: white;
+    font-family: "roboto" , sans-serif;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attacks {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+    color: white;
+}
+#player-lives, #enemy-lives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.player-attacks, .enemy-attacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#see-map {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#see-map button {
+    width: 45px;
+    height: 35px;
+    border-radius: 20px;
+    background: #27391C;
+    border: 2px solid #1F7D53;
+    color: white;
+    font-family: "roboto" , sans-serif;
+    margin-top: 10px;
+}
+
+@media (max-width: 560px) {
+    .cards, .attacks-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #see-map div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;                              
+    }   
+}

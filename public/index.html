@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JOPOMON!🔥💧🌿</title>
+        <link rel="stylesheet" href="./jopomonstyles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+            <section id="select-pet">
+                <h1 class="title">JOPOMON! 🔥💧🌿</h1>
+
+                <h2 class="subtitle">Choose your pet:</h2>
+
+            <div id="cardContainer" class="cards">
+            
+            </div>
+
+            <button id="button-select">To Select</button>
+        </section>
+
+        <section id="see-map">
+            <h2 class="subtitle">Go through map with your jopomon</h2>
+            <canvas id="map"></canvas>
+            <button 
+                ontouchend="stopMovement()" 
+                ontouchstart="moveUp()" 
+                onmouseup="stopMovement()" 
+                onmousedown="moveUp()">
+                🔼
+            </button>
+            <div>
+                <button 
+                    ontouchend="stopMovement()" 
+                    ontouchstart="moveLeft()" 
+                    onmouseup="stopMovement()" 
+                    onmousedown="moveLeft()">
+                    ◀️
+                </button>
+                <button 
+                    ontouchend="stopMovement()" 
+                    ontouchstart="moveDown()" 
+                    onmouseup="stopMovement()" 
+                    onmousedown="moveDown()">
+                    🔽
+                </button>
+                <button 
+                    ontouchend="stopMovement()" 
+                    ontouchstart="moveRight()" 
+                    onmouseup="stopMovement()" 
+                    onmousedown="moveRight()">
+                    ▶️
+                </button>
+            </div>
+        </section>
+
+        <section id="select-attack">
+            <h1 class="title">JOPOMON! 🔥💧🌿</h1>
+
+            <h2 class="subtitle">Choose your atack:</h2>
+
+            <div id="attacksContainer" class="attacks-cards">
+
+            </div>
+
+            <div id="Message">
+                <div id="result">Good luck!</div>
+
+                <section id="reset">
+                    <button id="button-reset">Reset</button>
+                </section>
+            </div>
+
+            <div class="attacks">
+                <div>
+                    <p id="player-lives">0</p>
+                    <p id="player-mascot"></p>
+                    <div id="player-attacks"></div>
+                </div>
+                <div>
+                    <p id="enemy-lives">0</p>
+                    <p id="enemy-mascot"></p>
+                    <div id="enemy-attacks"></div>
+                </div>
+            </div>
+         </section>
+        <script src="./js/jopomon.js"></script>
+    </body>
+</html>
